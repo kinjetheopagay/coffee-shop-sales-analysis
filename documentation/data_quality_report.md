@@ -48,25 +48,71 @@ This suggests that the dataset records individual product line items rather than
 
 **Impact:** Complete customer orders cannot be reliably reconstructed because the dataset does not contain a dedicated order ID or basket ID.
 
-### 3.2 Inconsistent Product Pricing
 
-The initial inspection identified 15 products with inconsistent recorded unit prices, with most of the affected cases associated with one store.
+### 3.2 Product Price Variations
 
-These differences require further investigation before being classified as errors.
+The initial inspection identified 15 product IDs with varying recorded unit prices.
 
-**Planned approach:** Retain the recorded prices in the primary revenue analysis and investigate the inconsistencies separately.
+Further investigation was performed on Product ID 9 (Organic Decaf Blend) and Product ID 69 (Hazelnut Biscotti).
 
-Revenue will be calculated using:
+**Product ID 9 - Organic Decaf Blend**
 
-`Revenue = transaction_qty × unit_price`
+Four distinct unit prices were identified:
 
-### 3.3 Reporting Period Limitation
+- $12.00
+- $22.50
+- $23.00
+- $28.00
+
+Price variations were observed on selected dates and transaction hours. However, no consistent pricing pattern could be established.
+
+**Product ID 69 - Hazelnut Biscotti**
+
+Two unit prices were identified: $3.25 and $4.06.
+
+Further investigation showed that the higher price appeared exclusively at the Lower Manhattan store.
+
+| Unit Price | Records | Percentage |
+|---|---:|---:|
+| $3.25 | 688 | 97.04% |
+| $4.06 | 21 | 2.96% |
+| **Total** | **709** | **100%** |
+
+All 21 records with the higher price occurred on the 9th day of each month from January through June 2023, exclusively at the Lower Manhattan store.
+
+This recurring pattern may indicate a promotional or pricing adjustment, but the reason cannot be confirmed from the available dataset.
+
+**Analysis Consideration:** Recorded prices will be retained in the primary revenue analysis. These variations will not be automatically classified as data errors or corrected without supporting evidence.
+
+
+
+### 3.3 Additional Data Quality Checks
+
+Additional SQL checks were performed to assess the completeness and consistency of the dataset.
+
+| Check | Result |
+|---|---|
+| NULL values | None detected across all 11 columns |
+| Unique transaction IDs | 149,116 |
+| Repeated transaction IDs | None detected |
+| Exact duplicate records | None detected |
+| Zero or negative quantities | 0 records |
+| Zero or negative unit prices | 0 records |
+
+All 11 columns returned 149,116 non-NULL values.
+
+The number of distinct transaction IDs also matched the total number of records.
+
+**Finding:** No missing values, duplicate transaction IDs, exact duplicate records, or invalid quantities and unit prices were detected through these checks.
+
+
+### 3.4 Reporting Period Limitation
 
 The dataset covers only six months, from January to June 2023.
 
 **Impact:** The analysis can examine monthly trends within the available period but cannot provide reliable year-over-year comparisons or long-term seasonal conclusions.
 
-### 3.4 Missing Customer Identifiers
+### 3.5 Missing Customer Identifiers
 
 The dataset does not contain customer IDs.
 
@@ -89,4 +135,4 @@ The dataset is suitable for a beginner-to-intermediate sales analytics project. 
 
 Although certain limitations exist, documenting and addressing these issues will help ensure that the analysis is transparent, accurate, and meaningful.
 
-This report will be updated as additional data quality checks and SQL analysis are performed.
+This report may be updated as additional findings emerge during the analysis.
