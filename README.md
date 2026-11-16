@@ -76,4 +76,5 @@ Kinje Theo P. Pagay
 
 Bachelor of Science in Information Technology  
 Cebu Institute of Technology - University
+
 Aspiring Data Analyst
