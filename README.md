@@ -23,11 +23,11 @@ The goal is to apply data analytics techniques to raw sales data and turn the re
 
 The dataset contains coffee shop transaction records covering six months of sales activity.
 
-The original CSV will be maintained locally during the initial inspection and analysis.
+The original CSV is maintained locally and used as the source dataset for the analysis.
 
 ## Tools and Technologies
 
-- **PostgreSQL** – Data exploration and SQL analysis
+- **Microsoft SQL Server** – Data exploration, data quality checks, and SQL analysis
 - **Microsoft Excel** – Data preparation, analysis, PivotTables, and dashboard creation
 - **GitHub** – Project documentation and version control
 
@@ -35,25 +35,45 @@ The original CSV will be maintained locally during the initial inspection and an
 
 1. Dataset inspection and data quality assessment
 2. SQL data exploration and analysis
-3. Excel data preparation and visualization
-4. Business insights and recommendations
-5. Project documentation and presentation
+3. Documentation of data quality findings and business insights
+4. Excel data preparation, analysis, and visualization
+5. Dashboard creation and final project presentation
 
 ## Project Status
 
-Currently in progress – Initial project setup and dataset inspection.
+Currently in progress.
+
+**Completed:**
+- Initial dataset inspection
+- SQL data exploration
+- Data quality assessment
+- SQL sales performance analysis
+- Documentation of data quality findings and business insights
+
+**Upcoming:**
+- Excel data preparation and analysis
+- PivotTables and dashboard creation
+- Final project documentation and presentation
 
 ## Key Findings
 
-To be updated after completing the SQL and Excel analysis.
+- Total revenue reached $698,812.33 during the six-month reporting period.
+- Hell's Kitchen generated the highest revenue among the three store locations.
+- Coffee and Tea accounted for approximately 66.7% of total revenue.
+- June recorded the highest monthly revenue at $166,485.88.
+- The highest revenue-generating hour was 10:00 AM.
+- Barista Espresso generated the highest revenue among product types.
+- The top four product types contributed 44.49% of total revenue.
+- June 19, 2023 recorded the highest daily revenue at $6,403.91.
 
 ## Business Recommendations
 
-To be updated based on the findings from the analysis.
+Recommendations will be developed after completing the Excel analysis and dashboard. Further analysis will help evaluate sales patterns, product performance, and opportunities for improving business operations.
 
 ## Author
 
-Kinje Theo Pagay
+Kinje Theo P. Pagay
 
 Bachelor of Science in Information Technology  
+Cebu Institute of Technology - University
 Aspiring Data Analyst
