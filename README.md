@@ -41,21 +41,28 @@ The original CSV is maintained locally and used as the source dataset for the an
 
 ## Project Status
 
-Currently in progress.
+- [x] SQL data exploration and analysis
+- [x] Data quality checks and documentation
+- [x] SQL findings documentation
+- [x] Excel workbook preparation and revenue validation
+- [ ] Excel sales analysis
+- [ ] Excel dashboard development
 
 **Completed:**
 - Initial dataset inspection
-- SQL data exploration
+- SQL data exploration and analysis
 - Data quality assessment
-- SQL sales performance analysis
 - Documentation of data quality findings and business insights
+- Excel workbook preparation and initial revenue validation
+
+**In Progress:**
+- Excel sales analysis
 
 **Upcoming:**
-- Excel data preparation and analysis
 - PivotTables and dashboard creation
 - Final project documentation and presentation
 
-## Key Findings
+## Key Findings (SQL Analysis)
 
 - Total revenue reached $698,812.33 during the six-month reporting period.
 - Hell's Kitchen generated the highest revenue among the three store locations.
