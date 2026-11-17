@@ -84,7 +84,9 @@ This recurring pattern may indicate a promotional or pricing adjustment, but the
 
 **Analysis Consideration:** Recorded prices will be retained in the primary revenue analysis. These variations will not be automatically classified as data errors or corrected without supporting evidence.
 
+**Investigation Scope:** Two of the 15 product IDs with varying unit prices were selected for further investigation: Product ID 9 (Organic Decaf Blend) and Product ID 69 (Hazelnut Biscotti). The remaining 13 product IDs were identified but were not individually investigated due to the project's scope.
 
+The observed price variations were retained in the dataset because there was insufficient evidence to classify them as errors.
 
 ### 3.3 Additional Data Quality Checks
 
