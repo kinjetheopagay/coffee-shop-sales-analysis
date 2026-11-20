@@ -1,3 +1,4 @@
+
 # Coffee Shop Sales Analysis
 
 An end-to-end Data Analytics portfolio project using **Microsoft SQL Server** and **Microsoft Excel** to analyze coffee shop sales performance, identify trends, and generate actionable business insights.
@@ -54,6 +55,8 @@ The original CSV dataset is maintained locally and used as the source dataset fo
 
 ```text
 coffee-shop-sales-analysis/
+├── data/
+│   └── README.md
 ├── documentation/
 │   ├── data_quality_report.md
 │   └── project_findings.md
@@ -144,6 +147,81 @@ Based on the findings, the following opportunities may be worth exploring:
 
 These recommendations are intended as opportunities for further investigation rather than confirmed operational problems.
 
+## Business Understanding & Interview Preparation
+
+### Why I Chose This Dataset
+
+I chose the Coffee Shop Sales dataset because of my previous experience working as a Starbucks barista. Having firsthand experience in the coffee shop industry gave me a better understanding of how daily operations work, particularly during peak hours, product demand, inventory preparation, and customer service.
+
+I wanted to work with a dataset related to an industry I was already familiar with so I could connect my practical experience with the technical skills I was developing in SQL and Excel.
+
+I also saw an opportunity to investigate how sales data could help coffee shop management make better operational and business decisions.
+
+### What I Discovered from the Data
+
+My investigation revealed several areas where sales data could provide useful insights:
+
+- **Peak-Hour Performance:** 10:00 AM recorded the highest hourly revenue at $88,673.39, with 9:00 AM and 8:00 AM also recording high revenue. This highlights the importance of understanding morning demand.
+- **Product Performance:** Barista Espresso was the highest-revenue product type, generating $91,406.20. Coffee and Tea were also the leading product categories, contributing approximately 66.74% of total revenue.
+- **Store Performance:** Hell's Kitchen recorded the highest revenue among the three locations, although the differences between stores were relatively small.
+- **Monthly Trends:** Revenue increased over the reporting period, with June recording the highest monthly revenue at $166,485.88.
+- **Lower-Revenue Categories:** Packaged Chocolate and Flavours generated the lowest category revenues, suggesting areas that management could investigate further.
+
+### How I Would Help the Business
+
+Based on the findings and my understanding of coffee shop operations, I identified several opportunities where management could use data to improve decision-making.
+
+**1. Improve Staff Scheduling During Peak Hours**
+
+The hourly revenue analysis shows that morning hours, particularly around 8:00 AM to 10:00 AM, are important sales periods.
+
+Management could review staffing schedules and consider allocating sufficient personnel during these periods to handle customer demand, maintain service speed, and reduce potential waiting times.
+
+I would also recommend analyzing hourly sales separately for each store before making staffing adjustments.
+
+**2. Improve Inventory Planning for Popular Products**
+
+The product analysis identifies which products generate the most revenue and attract stronger sales.
+
+Management could use product-level quantity sold, together with supplier lead times and inventory records, to determine appropriate stock levels for popular products. This could help reduce the risk of stock shortages during high-demand periods.
+
+**3. Review Lower-Performing Products**
+
+Products and categories with lower sales could be investigated to understand whether their performance is related to customer demand, pricing, product visibility, or other factors.
+
+Rather than immediately removing these products, management could consider improving product presentation, reviewing pricing, or testing promotional strategies. Products that consistently underperform could then be evaluated for possible changes to the product assortment.
+
+**4. Monitor Store-Level Performance**
+
+Although the three stores generated relatively similar revenue, management could investigate differences in their hourly sales patterns, product preferences, and operational performance.
+
+This could help identify successful practices in one location that might also work in another.
+
+**5. Track Sales Trends for Better Planning**
+
+Monitoring monthly revenue and product performance over time could help management identify changes in demand and adjust purchasing, staffing, and sales strategies accordingly.
+
+### Expected Business Impact
+
+If these recommendations were supported by additional operational data and implemented effectively, they could help the business:
+
+- Improve staff allocation during high-demand periods.
+- Reduce the risk of popular products becoming unavailable.
+- Make more informed purchasing and inventory decisions.
+- Identify products that need improvement or further evaluation.
+- Improve consistency across store locations.
+- Make business decisions based on actual sales performance rather than assumptions.
+
+To evaluate the results, management could monitor indicators such as stockout frequency, inventory waste, hourly sales, customer waiting time, product sales volume, and revenue trends.
+
+### My Key Takeaway
+
+This project helped me understand that data analytics is not just about writing SQL queries, creating PivotTables, or building dashboards. The real value comes from understanding what the numbers mean and how they can help a business make better decisions.
+
+My previous experience as a barista helped me recognize operational questions worth investigating, while SQL and Excel allowed me to examine those questions using actual sales data.
+
+As an aspiring Data Analyst, I want to combine technical analysis with business understanding to provide insights that can support practical and measurable improvements.
+
 ## Data Limitations
 
 The analysis is subject to several dataset limitations:
@@ -156,7 +234,7 @@ The analysis is subject to several dataset limitations:
 
 ## Project Status
 
-<badge color="success">Completed</badge>
+**Status: Completed**
 
 - [x] SQL data exploration and analysis
 - [x] Data quality checks and documentation
